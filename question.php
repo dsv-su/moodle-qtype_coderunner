@@ -589,7 +589,7 @@ class qtype_coderunner_question extends question_graded_automatically {
             } else if (strlen($response['answer']) < constants::FUNC_MIN_LENGTH) {
                 return get_string('answertooshort', 'qtype_coderunner', constants::FUNC_MIN_LENGTH);
             } else if (trim($response['answer']) == trim($this->answerpreload)) {
-                return get_string('answerunchanged', 'qtype_coderunner');
+                //return get_string('answerunchanged', 'qtype_coderunner');
             }
         }
         return '';  // All good.
